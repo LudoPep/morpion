@@ -1,0 +1,15 @@
+<div id="modal" class="modal" *ngIf="isPopinOpened">
+    <div class="modal-content" *ngIf="!hasNoWinner">
+        <span class="close" (click)="closePopin()">&times;</span>
+        <h2>
+            &#x2728;
+            Le joueur {{player}} est le vainqueur
+            &#x2728;
+        </h2>
+        <p>Bravo !</p>
+    </div>
+    <div class="modal-content" *ngIf="hasNoWinner">
+        <span class="close" (click)="closePopin()">&times;</span>
+        <p>Il n'y a pas de vainqueur &#x1F440; </p>
+    </div>
+</div>

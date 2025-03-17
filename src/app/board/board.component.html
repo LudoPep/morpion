@@ -1,0 +1,32 @@
+<div>
+    <p class="playerText">
+        Le joueur {{player}} joue.
+    </p>
+</div>
+<div class="board">
+  <table>
+    <tbody>
+        <tr>
+            <td (click)="addSymbol(0)">{{ myBoard[0] }}</td>
+            <td (click)="addSymbol(1)">{{ myBoard[1] }}</td>
+            <td (click)="addSymbol(2)">{{ myBoard[2] }}</td>
+          </tr>
+          <tr>
+            <td (click)="addSymbol(3)">{{ myBoard[3] }}</td>
+            <td (click)="addSymbol(4)">{{ myBoard[4] }}</td>
+            <td (click)="addSymbol(5)">{{ myBoard[5] }}</td>
+          </tr>
+          <tr>
+            <td (click)="addSymbol(6)">{{ myBoard[6] }}</td>
+            <td (click)="addSymbol(7)">{{ myBoard[7] }}</td>
+            <td (click)="addSymbol(8)">{{ myBoard[8] }}</td>
+          </tr>
+    </tbody>
+  </table>
+</div>
+
+<app-popin [player]="player"
+        [isPopinOpened]="isPopinOpened"
+        [hasNoWinner]="hasNoWinner"
+        (close)="closePopin()"
+></app-popin>

@@ -1,0 +1,41 @@
+.board {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: cursive;
+}
+
+table {
+    border-collapse: collapse;
+    margin: 20px auto;
+    box-shadow: 21px 21px 23px rgba(0, 0, 0, 0.5);
+}
+
+td {
+    width: 100px;
+    height: 100px;
+    text-align: center;
+    font-size: 4rem;
+    font-weight: bold;
+    cursor: pointer;
+    border: 2px solid #333;
+}
+
+td:nth-child(odd), td:nth-child(even) {
+    background-color: #D2B48C;
+}
+
+tr:nth-child(even) td:nth-child(odd),
+tr:nth-child(odd) td:nth-child(even) {
+    background-color: #8B5A2B;
+    // color: white;
+}
+
+.playerText {
+    font-family: cursive;
+}
+
+// td:hover {
+//     background-color: #FFD700;
+//     transition: 0.3s;
+// }
